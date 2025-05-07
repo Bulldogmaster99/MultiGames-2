@@ -10,7 +10,7 @@ from pathlib import Path
 
 # Constants
 WIDTH, HEIGHT = 1280, 800
-STORAGE_LIMIT = 200  # MB
+STORAGE_LIMIT = 10  # MB
 COLORS = {
     'background': (18, 18, 18),
     'surface': (30, 30, 30),
