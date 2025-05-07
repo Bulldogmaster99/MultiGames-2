@@ -197,7 +197,7 @@ class Menu:
             pygame.draw.circle(screen, p.color, (int(p.x), int(p.y)), p.size)
 
     def draw_header(self):
-        pygame.draw.rect(screen, (0, 0, 0), (0, 0, WIDTH, 80))  # Black header
+        pygame.draw.rect(screen, (70, 70, 255), (0, 0, WIDTH, 80))  # Black header
         title = title_font.render("MultiGames", True, (255, 255, 255))  # White text
         screen.blit(title, (40, 20))
         self.storage_meter.draw(screen, self.launcher.get_used_space(), STORAGE_LIMIT)
@@ -290,3 +290,4 @@ if __name__ == "__main__":
     launcher = GameLauncher()
     menu = Menu(launcher)
     menu.run()
+
